@@ -19,8 +19,98 @@
   }
 }
 
+/* Smooth scrolling for in-page navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reset body styles */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+/* Navigation styles */
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 200px;
+  background: #f3f4f6;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation links */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #1e40af;
+}
+
+/* Main content area */
+main {
+  margin-left: 220px;
+  /* Leave space for the nav */
+  padding: 40px;
+  flex-grow: 1;
+}
+
+/* Sections */
+section {
+  padding: 50px 20px;
+  min-height: 100vh;
+  /* Each section takes full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid #ddd;
+
+  .about-header {
+    padding-bottom: 3rem;
+  }
+}
+
+section:last-of-type {
+  border-bottom: none;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  main {
+    margin-left: 0;
+    margin-top: 60px;
+    /* Adjust for nav height */
+  }
 }
