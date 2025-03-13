@@ -1,9 +1,7 @@
+import { NextConfig } from 'next';
 import path from 'path';
 
-const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
+const nextConfig: NextConfig = {
   webpack(config) {
     config.resolve.modules.push(path.resolve('./src'));
     return config;
@@ -11,4 +9,3 @@ const nextConfig = {
 };
 
 export default nextConfig;
-
