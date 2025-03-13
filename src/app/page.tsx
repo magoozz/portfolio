@@ -25,7 +25,7 @@ export default function Home() {
 
       <section id="projects">
         <h2>Projects</h2>
-        <p>Some of the things I've built...</p>
+        <p>Some of the things I&apos;ve built...</p>
       </section>
 
       <section id="contact">
