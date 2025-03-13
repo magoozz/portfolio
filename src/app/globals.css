@@ -1,53 +1,91 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-/* Smooth scrolling for in-page navigation */
 html {
   scroll-behavior: smooth;
 }
 
-/* Reset body styles */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   display: flex;
+  background-color: #1b263b;
 }
 
-/* Navigation styles */
 nav {
   position: fixed;
   left: 0;
   top: 0;
   height: 100vh;
-  width: 200px;
-  background: #f3f4f6;
-  padding: 20px;
+  width: 50rem;
+  background: #1b263b;
+  padding: 20px 20px 20px 150px;
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 10px;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+
+  .header {
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+
+    .name {
+      font-size: 3.5rem;
+
+      a {
+        color: #e0e1dd;
+      }
+
+    }
+
+    .title {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #e0e1dd;
+    }
+
+    .info {
+      width: 20rem;
+      color: #b3b8c0;
+    }
+  }
+
+  .resume {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+    .resume-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #1b263b;
+      background-color: #6993e5;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    }
+
+    .resume-button:hover,
+    .resume-button:focus {
+      background-color: #5578ba;
+      transform: scale(1.05);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .resume-button:focus {
+      outline: none;
+      box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.5);
+    }
+  }
+
 }
 
-/* Navigation links */
 nav ul {
   list-style: none;
   padding: 0;
@@ -59,37 +97,51 @@ nav li {
 }
 
 nav a {
-  color: #2563eb;
+  color: #6993e5;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #1e40af;
+  color: #5578ba;
 }
 
-/* Main content area */
+nav a:active {
+  color: #b3b8c0;
+}
+
 main {
-  margin-left: 220px;
-  /* Leave space for the nav */
+  margin-left: 600px;
   padding: 40px;
   flex-grow: 1;
 }
 
-/* Sections */
 section {
-  padding: 50px 20px;
-  min-height: 100vh;
-  /* Each section takes full viewport height */
+  padding: 60px 60px 0px 170px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-bottom: 1px solid #ddd;
+  color: #b3b8c0;
+  width: 55rem;
 
-  .about-header {
-    padding-bottom: 3rem;
+  .about {
+    margin-bottom: 4rem;
+    padding: 20px;
+
+    a {
+      color: #e0e1dd;
+      font-weight: 600;
+      transition: all 0.2s ease-in-out;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #6993e5;
+      text-decoration: none;
+    }
   }
+
 }
 
 section:last-of-type {
@@ -111,6 +163,58 @@ section:last-of-type {
   main {
     margin-left: 0;
     margin-top: 60px;
-    /* Adjust for nav height */
   }
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 4rem;
+}
+
+.experience-item {
+  display: block;
+  padding: 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  
+}
+
+.experience-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.135);
+  transform: translateY(-5px);
+}
+
+.experience-item:hover .description h3 {
+  color: #6993e5;
+  transition: color 0.3s;
+}
+
+.timeline p {
+  color: #a0a0a0;
+  font-size: 14px;
+}
+
+.description h3 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.stack {
+  margin-top: 10px;
+}
+
+.stack span {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 12px;
+  color: #6993e5;
+  background-color: #6992e519;
 }
