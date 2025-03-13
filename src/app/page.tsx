@@ -4,7 +4,7 @@ export default function Home() {
       <section id="about">
         <div className="about">
           <div className="about-header">
-        <h1 >Hi, I'm Megan Bartlett</h1>
+        <h1 >Hi, I&apos;m Megan Bartlett</h1>
           </div>
           <div className="about-content">
             <p>Full-Stack Web and Software developer. I am a passionate web and software developer with a strong foundation in computer science...</p>            
