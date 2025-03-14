@@ -232,7 +232,7 @@ section:last-of-type {
   margin-bottom: 4rem;
 }
 
-.experience-item {
+.experience-item, .project-item {
   display: flex;
   align-items: flex-start;
   gap: 2rem;
@@ -243,18 +243,18 @@ section:last-of-type {
 
 }
 
-.experience-item:hover {
+.experience-item:hover, .project-item:hover {
   background-color: rgba(255, 255, 255, 0.045);
   box-shadow: 0 4px 6px rgba(255, 255, 255, 0);
   transform: translateY(-5px);
 }
 
-.experience-item:hover .description h3 {
+.experience-item:hover .description h3, .project-item:hover .description h3 {
   color: #6993e5;
   transition: color 0.3s;
 }
 
-.experience:hover .experience-item:not(:hover) {
+.experience:hover .experience-item:not(:hover), .projects:hover .project-item:not(:hover) {
   opacity: 0.5;
   filter: blur(0.1px);
   transition: opacity 0.3s, filter 0.3s;

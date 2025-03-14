@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ExperienceItem from "../components/ExperienceItem";
+import ProjectItem from "../components/ProjectItem";
 
 export default function Home() {
   return (
@@ -68,7 +69,7 @@ export default function Home() {
             dateRange="2022 — 2023"
             title="Web Accessibility Specialist"
             company="Boise State University"
-            companyUrl="https://www.boisestate.edu/"
+            companyUrl="https://www.boisestate.edu/webguide/accessibility/"
             description="Evaluated Boise State University&apos;s web pages for accessibility compliance using Monsido. 
             I addressed accessibility errors through WordPress and worked closely with Idaho site creators to educate them on best practices for ensuring web pages met AA standards. 
             Additionally, I contributed to the Idaho Web Content Accessibility Badge, promoting accessible digital content across the state."
@@ -100,8 +101,47 @@ export default function Home() {
 
       {/* Projects Section */}
       <section id="projects">
-        <h2>Projects</h2>
-        <p>Some of the things I&apos;ve built...</p>
+        <div className="projects">
+          <ProjectItem
+            title="Blackbaud Site Rebuild and Maintnence"
+            url="https://www.blackbaud.com/"
+            description="Worked with team to rebuild and maintain, maybe talk about searching filter?? Collaborated with a team to rebuild and maintain Blackbaud&apos;s
+            corportate website, enhancing content management with a more dynamic, flexible platform. Utilized Wordpress to implement a design system based off the block-based 
+            (ACF) components, enabling greater adaptability for content creators."
+            skills={["WordPress (ACF)", "HTML & CSS", "JavaScript", "PHP",]}
+          />
+
+          <ProjectItem
+            title="Christmanco Site Rebuild and Maintence"
+            url="https://www.christmanco.com/"
+            description="Again work with team to rebuild and maintain, think of something unique i personally built to add in here."
+            skills={["WordPress", "HTML & CSS", "Monsido"]}
+          />
+
+          <ProjectItem
+            title="Version Tracker Microservice"
+            url="https://www.boisestate.edu/"
+            description="Built a serverless microservice to track software dependencies across Curinos' nine products. Developed the backend in Java,
+            using AWS Lambda and API Gateway for real-time updates. Intergrated with Conflucne to automate dependency version tracking, reducing manual effort.
+            Write more/ add link to video and documentation??"
+            skills={["Java", "AWS Lambda", "API Gateway"]}
+          />
+
+          <ProjectItem
+            title="Memory Hole"
+            url="https://github.com/magoozz/BSU/tree/3767e5ff814a16573cb61b4e1c2f8ca2f5463c2c/CS452/452-hw5/hw5"
+            description="CREATE NEW GITHUB LINK OUTSIDE OF BSU FOLDER!! Implements a memory allocator based on the budy system designed to replace
+            'malloc'. It is able to do this through the use of freeList, bitMap and other utils (found in util.c) that help to calcualte the buddies address."
+            skills={["C"]}
+          />
+
+          <ProjectItem
+            title="Electric Reefer Solutions?"
+            url="https://www.electricreefersolutions.com/"
+            description="IDK if i wanna show this, super basic re-build I did to learn the fundamentals of ACF"
+            skills={["WordPress (ACF)", "HTML & SCSS", "JavaScript", "PHP"] }
+          />
+        </div>
       </section>
 
       {/* Contact Section */}

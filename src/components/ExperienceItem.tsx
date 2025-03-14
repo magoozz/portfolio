@@ -24,20 +24,19 @@ export default function ExperienceItem({
 
       {/* Right: Job Description */}
       <div className="description">
-        <h3>
-          {title} ·{" "}
-          <Link href={companyUrl} target="_blank" rel="noopener noreferrer">
-            {company} ↗
-          </Link>
-        </h3>
-        <p>{description}</p>
+        <Link href={companyUrl} target="_blank" rel="noopener noreferrer">
+          <h3>
+            {title} · {company} ↗
+          </h3>
+          <p>{description}</p>
 
-        {/* Skills */}
-        <div className="stack">
-          {skills.map((skill, index) => (
-            <span key={index}>{skill}</span>
-          ))}
-        </div>
+          {/* Skills */}
+          <div className="stack">
+            {skills.map((skill, index) => (
+              <span key={index}>{skill}</span>
+            ))}
+          </div>
+        </Link>
       </div>
     </div>
   );

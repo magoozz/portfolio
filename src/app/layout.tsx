@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
-import { FaLinkedin, FaGithub, FaBook } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaBook, FaEnvelope } from "react-icons/fa";
 import CursorGlow from "../components/CursorGlow"; // Import the glow effect
+
 
 export const metadata: Metadata = {
   title: "Megan Bartlett",
@@ -19,7 +20,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <title>Megan Bartlett</title>
       </head>
       <body>
-        <CursorGlow /> {/* Cursor glow added here */}
+        <CursorGlow />
         <nav>
           <div className="header">
             <div className="name">
@@ -38,7 +39,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <li><Link href="#experience">Experience</Link></li>
               <li><Link href="#projects">Projects</Link></li>
               <li><Link href="#contact">Contact</Link></li>
-            </ul>            
+            </ul>
           </div>
           <div className="resume">
             <a
@@ -56,6 +57,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               rel="noopener noreferrer"
             >
               <FaLinkedin size={30} />
+            </a>
+            <a href="mailto:meganbartlett73@u.boisestate.edu">
+              <FaEnvelope size={30} />
             </a>
             <a
               href="https://github.com/magoozz"
