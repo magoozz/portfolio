@@ -33,7 +33,7 @@ export default function Home() {
             </p>
 
             <p className="mt-6">
-              When I&apos;m not coding, you’ll find me practicing hot yoga, reading, or exploring{" "}
+              When I&apos;m not coding, you&apos;ll find me practicing hot yoga, reading, or exploring{" "}
               new tech stacks.
               I love tackling complex problems —whether it&apos;s optimizing a web experience or designing a{" "}
               scalable backend solution. Let&apos;s connect!
@@ -46,31 +46,55 @@ export default function Home() {
       <section id="experience">
         <div className="experience">
           <ExperienceItem
-            company="Elexicon"
+            dateRange="2023 — Present"
             title="Web & Software Developer"
-            duration="2023 — Present"
-            description="Builds and maintains digital experiences using modern web technologies."
-            link="https://elexicon.com/"
-            stack={["JavaScript", "PHP", "HTML & SCSS", "Bootstrap", "React", "WordPress (ACF)"]}
+            company="Elexicon"
+            companyUrl="https://elexicon.com/"
+            description="Collaborate with a team to build, rebuild, and maintain custom WordPress themes and full-stack applications for enterprise clients. 
+            My work focuses on optimizing these solutions for performance, scalability, and seamless integration with existing content management workflows. 
+            I contribute to creating tailored functionality using PHP and JavaScript, enhancing both site performance and user experience. 
+            I also develop responsive and dynamic front-end interfaces with React and modern JavaScript frameworks to ensure a consistent, engaging experience across all devices."
+            skills={[
+              "JavaScript",
+              "PHP",
+              "HTML & SCSS",
+              "Bootstrap",
+              "React",
+              "WordPress (ACF)",
+            ]}
           />
 
           <ExperienceItem
-            company="Boise State University"
+            dateRange="2022 — 2023"
             title="Web Accessibility Specialist"
-            duration="2022 — 2023"
-            description="Ensured accessibility compliance and improved website usability."
-            link="https://www.boisestate.edu/webguide/accessibility/"
-            stack={["WordPress", "HTML & CSS", "Monsido"]}
+            company="Boise State University"
+            companyUrl="https://www.boisestate.edu/"
+            description="Evaluated Boise State University&apos;s web pages for accessibility compliance using Monsido. 
+            I addressed accessibility errors through WordPress and worked closely with Idaho site creators to educate them on best practices for ensuring web pages met AA standards. 
+            Additionally, I contributed to the Idaho Web Content Accessibility Badge, promoting accessible digital content across the state."
+            skills={["WordPress", "HTML & CSS", "Monsido"]}
           />
 
           <ExperienceItem
-            company="Curinos"
+            dateRange="May — Aug 2022"
             title="Software Engineering Intern"
-            duration="May — Aug 2022"
-            description="Worked on cloud-based solutions with AWS services and Java."
-            link="https://www.curinos.com/"
-            stack={["AWS Lambda", "API Gateway", "Java", "DynamoDB", "Confluence"]}
+            company="Curinos"
+            companyUrl="https://www.curinos.com/"
+            description="Developed the backend of a microservice designed to track dependencies and their versions across nine different products. 
+            I wrote a function in Java and leveraged AWS Lambda and API Gateway to create a tracker that consolidated foundation dependencies (product, environment, component name, version, and timestamp) into a single table on a Confluence page. 
+            The service processed payloads from various products, compared new data with existing entries, and updated the Confluence page in real-time."
+            skills={["AWS Lambda", "API Gateway", "Java", "DynamoDB", "Confluence"]}
           />
+        </div>
+
+        <div className="resume">
+          <a
+            href="/resume/MeganBartlett_Resume.pdf"
+            download="MeganBartlett_Resume.pdf"
+            className="resume-button"
+          >
+            My Resume
+          </a>
         </div>
       </section>
 
