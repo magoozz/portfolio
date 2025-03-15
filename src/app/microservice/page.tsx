@@ -1,0 +1,59 @@
+"use client";
+import MicroserviceLayout from "./template";
+import Link from "next/link";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { dracula } from "react-syntax-highlighter/dist/esm/styles/hljs";
+
+export default function MicroservicePage() {
+  ;
+
+  return (
+    <div className="microservice">
+      <div className="header">
+        <a href="/#about" className="name-link">Megan Bartlett</a>
+        <div className="header-wrap">
+          <h1>Version Tracker Micro-service</h1>
+          <div className="code-d">
+            <a
+              href="https://github.com/magoozz/version-tracker"
+              className="code-button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              My code
+            </a>
+          </div>
+        </div>
+        <h2>Developed as Software Engineering Intern at Curinos</h2>
+      </div>
+
+      <div className="content">
+        <div className="code-m">
+          <a
+            href="https://github.com/magoozz/version-tracker"
+            className="code-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            My code
+          </a>
+        </div>
+        <h3>Project Overview</h3>
+        <p>
+          The Version Tracker Microservice was a critical backend solution designed to enhance dependency management across multiple Curinos products. By integrating AWS Lambda and API Gateway, the microservice automated version tracking, reducing manual efforts and ensuring real-time accuracy in dependency information.
+
+          Reflecting on this project, I see its impact beyond just the technical implementation. It was designed to simplify debugging for developers, providing an easily accessible, automated way to monitor dependencies. The integration with Confluence ensured that the dependency table remained up-to-date, allowing engineers across teams to identify outdated versions and potential conflicts efficiently.
+
+          Moreover, this project strengthened my ability to analyze large-scale system dependencies, handle data extraction and transformation, and deploy serverless cloud-based solutions. It reinforced the importance of automation and real-time data management in a microservices ecosystem.
+        </p>
+      </div>
+
+      <div className="video-container">
+        <video controls className="video">
+          <source src="/video/VersionTrackerDemo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  );
+}

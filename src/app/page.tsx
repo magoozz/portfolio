@@ -62,6 +62,7 @@ export default function Home() {
               "Bootstrap",
               "React",
               "WordPress (ACF)",
+              "Docker",
             ]}
           />
 
@@ -87,16 +88,6 @@ export default function Home() {
             skills={["AWS Lambda", "API Gateway", "Java", "DynamoDB", "Confluence"]}
           />
         </div>
-
-        <div className="resume">
-          <a
-            href="/resume/MeganBartlett_Resume.pdf"
-            download="MeganBartlett_Resume.pdf"
-            className="resume-button"
-          >
-            My Resume
-          </a>
-        </div>
       </section>
 
       {/* Projects Section */}
@@ -104,7 +95,7 @@ export default function Home() {
         <div className="projects">
           <ProjectItem
             title="Blackbaud Site Rebuild and Maintnence"
-            url="https://www.blackbaud.com/"
+            url="/blackbaud"
             description="Worked with team to rebuild and maintain, maybe talk about searching filter?? Collaborated with a team to rebuild and maintain Blackbaud&apos;s
             corportate website, enhancing content management with a more dynamic, flexible platform. Utilized Wordpress to implement a design system based off the block-based 
             (ACF) components, enabling greater adaptability for content creators."
@@ -113,14 +104,14 @@ export default function Home() {
 
           <ProjectItem
             title="Christmanco Site Rebuild and Maintence"
-            url="https://www.christmanco.com/"
+            url="/christman"
             description="Again work with team to rebuild and maintain, think of something unique i personally built to add in here."
             skills={["WordPress", "HTML & CSS", "Monsido"]}
           />
 
           <ProjectItem
             title="Version Tracker Microservice"
-            url="https://www.boisestate.edu/"
+            url="/microservice"
             description="Built a serverless microservice to track software dependencies across Curinos' nine products. Developed the backend in Java,
             using AWS Lambda and API Gateway for real-time updates. Intergrated with Conflucne to automate dependency version tracking, reducing manual effort.
             Write more/ add link to video and documentation??"
@@ -129,17 +120,19 @@ export default function Home() {
 
           <ProjectItem
             title="Memory Hole"
-            url="https://github.com/magoozz/BSU/tree/3767e5ff814a16573cb61b4e1c2f8ca2f5463c2c/CS452/452-hw5/hw5"
-            description="CREATE NEW GITHUB LINK OUTSIDE OF BSU FOLDER!! Implements a memory allocator based on the budy system designed to replace
+            url="https://github.com/magoozz/Memory-Hole/tree/main"
+            description="Implements a memory allocator based on the budy system designed to replace
             'malloc'. It is able to do this through the use of freeList, bitMap and other utils (found in util.c) that help to calcualte the buddies address."
             skills={["C"]}
           />
 
           <ProjectItem
-            title="Electric Reefer Solutions?"
-            url="https://www.electricreefersolutions.com/"
-            description="IDK if i wanna show this, super basic re-build I did to learn the fundamentals of ACF"
-            skills={["WordPress (ACF)", "HTML & SCSS", "JavaScript", "PHP"] }
+            title="Converting a Regular Expression to an NFA"
+            url="https://github.com/magoozz/RE-to-NFA"
+            description="By taking in a string of symbols (a, b, *, (, ), |) that represents a regular expression, we are able to give input strings and see whether or not they are 
+            contained within the language of the regular expression. It does this by converting the regular expression into a Nondeterministic Finite Automata, then using the 
+            functionality of that class, checking to see if the strings are accepted or not."
+            skills={["Java",] }
           />
         </div>
       </section>
