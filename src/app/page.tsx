@@ -4,7 +4,7 @@ import ProjectItem from "../components/ProjectItem";
 
 export default function Home() {
   return (
-    <div>
+    <div className="home">
       {/* About Section */}
       <section id="about">
         <div className="about">

@@ -143,7 +143,7 @@ main {
   flex-grow: 1;
 }
 
-section {
+.home {
   padding: 3rem 60px 0px 200px;
   margin-left: 600px;
   display: flex;
@@ -151,6 +151,7 @@ section {
   justify-content: center;
   color: #b3b8c0;
   width: 57rem;
+  margin-bottom: 7rem;
 
   .about {
     margin-bottom: 2rem;
@@ -418,10 +419,11 @@ section:last-of-type {
     }
   }
 
-  section {
+  .home {
     padding: 1rem;
     max-width: 27rem;
     margin-left: 0;
+    margin-bottom: 4rem;
   }
 
   main {

@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Link from "next/link";
-import { FaLinkedin, FaGithub, FaBook, FaEnvelope } from "react-icons/fa";
 import CursorGlow from "../components/CursorGlow";
 import Navigation from "../components/Navigation"; // Move client logic here
 

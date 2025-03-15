@@ -1,6 +1,4 @@
 "use client";
-import ChristmanLayout from "./template";
-
 
 export default function ChristmanPage() {
   ;

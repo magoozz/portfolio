@@ -1,6 +1,4 @@
 "use client";
-import BlackbaudLayout from "./template";
-
 
 export default function BlackbaudPage() {
   ;
