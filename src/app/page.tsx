@@ -10,34 +10,28 @@ export default function Home() {
         <div className="about">
           <div className="about-content">
             <p>
-              I&apos;m a Software Engineer passionate about crafting{" "}
-              dynamic, scalable, and accessible web experiences. With a strong background in{" "}
-              full-stack development, I specialize in building{" "}
-              custom WordPress solutions, developing microservices, and
-              creating intuitive front-end interfaces with React and JavaScript.
+              I’m a Software Engineer passionate about building dynamic, scalable, and accessible web experiences.
+              Specializing in full-stack development, I create custom WordPress solutions, microservices, and intuitive
+              front-end interfaces with React and JavaScript. My expertise includes PHP, Java, AWS serverless architectures,
+              and web accessibility.
             </p>
 
             <p className="mt-6">
-              Currently, I work at <Link href="https://elexicon.com/">Elexicon</Link>, where I develop custom WordPress themes
-              and full-stack applications, ensuring seamless content management experiences for{" "}
-              enterprise clients such as <Link href="https://www.blackbaud.com/">Blackbaud.com</Link> and <Link href="https://www.christmanco.com/">Christmanco.com</Link>. As part of a small, agile team, I played a key role in implementing a{" "}
-              design system and building flexible, ACF-based components to
-              enhance content adaptability.
+              At <Link href="https://elexicon.com/">Elexicon</Link>, I develop custom WordPress themes and full-stack applications for
+              enterprise clients like <Link href="https://www.blackbaud.com/">Blackbaud.com</Link> and <Link href="https://www.christmanco.com/">Christmanco.com</Link>.
+              As part of an agile team, I help implement a design system and build flexible, ACF-based components.
             </p>
 
             <p className="mt-6">
-              Beyond web development, I have experience with AWS serverless architectures, writing{" "}
-              efficient Java microservices, and improving web accessibility standards.
-              While at Boise State University, I worked as a Web Accessibility Specialist,
-              ensuring university web pages met WCAG AA compliance and educating content creators on{" "}
-              accessibility best practices.
+              Beyond WordPress, I develop Java-based microservices with AWS Lambda, API Gateway, and DynamoDB.
+              At <Link href="https://curinos.com/">Curinos</Link>, I built a backend service for automating software dependency tracking.
+              At <Link href="https://www.boisestate.edu/">Boise State University</Link>, I ensured WCAG AA compliance and educated content creators on accessibility best practices.
             </p>
 
             <p className="mt-6">
-              When I&apos;m not coding, you&apos;ll find me practicing hot yoga, reading, or exploring{" "}
-              new tech stacks.
-              I love tackling complex problems —whether it&apos;s optimizing a web experience or designing a{" "}
-              scalable backend solution. Let&apos;s connect!
+              When I&apos;m not coding, you&apos;ll find me practicing hot yoga, reading, or exploring a new tech stack.
+              I thrive on tackling complex problems—whether it&apos;s optimizing a web experience or designing a scalable
+              backend solution. Let&apos;s connect!
             </p>
           </div>
         </div>
@@ -54,12 +48,13 @@ export default function Home() {
             description="Collaborate with a team to build, rebuild, and maintain custom WordPress themes and full-stack applications for enterprise clients. 
             My work focuses on optimizing these solutions for performance, scalability, and seamless integration with existing content management workflows. 
             I contribute to creating tailored functionality using PHP and JavaScript, enhancing both site performance and user experience. 
-            I also develop responsive and dynamic front-end interfaces with React and modern JavaScript frameworks to ensure a consistent, engaging experience across all devices."
+            And develop responsive and dynamic front-end interfaces with React and modern JavaScript frameworks to ensure a consistentcy."
             skills={[
               "JavaScript",
               "PHP",
               "HTML & SCSS",
               "Bootstrap",
+              "MySQL",
               "React",
               "WordPress (ACF)",
               "Docker",
@@ -82,9 +77,9 @@ export default function Home() {
             title="Software Engineering Intern"
             company="Curinos"
             companyUrl="https://www.curinos.com/"
-            description="Developed the backend of a microservice designed to track dependencies and their versions across nine different products. 
-            I wrote a function in Java and leveraged AWS Lambda and API Gateway to create a tracker that consolidated foundation dependencies (product, environment, component name, version, and timestamp) into a single table on a Confluence page. 
-            The service processed payloads from various products, compared new data with existing entries, and updated the Confluence page in real-time."
+            description="Developed the backend of a microservice designed to track dependencies and their data across nine products. 
+            A Java function that leverages AWS Lambda and API Gateway to create a tracker that consolidates foundation dependencies (product, environment, component name, version, and timestamp) into a single table on a Confluence page. 
+            The service processes payloads from various products, compared new data with existing entries, and updates the page in real-time."
             skills={["AWS Lambda", "API Gateway", "Java", "DynamoDB", "Confluence"]}
           />
         </div>
@@ -96,7 +91,7 @@ export default function Home() {
           <ProjectItem
             title="Blackbaud Site Rebuild and Maintnence"
             url="/blackbaud"
-            description="Worked with team to rebuild and maintain, maybe talk about searching filter?? Collaborated with a team to rebuild and maintain Blackbaud&apos;s
+            description="Collaborated with a team to rebuild and maintain Blackbaud&apos;s
             corportate website, enhancing content management with a more dynamic, flexible platform. Utilized Wordpress to implement a design system based off the block-based 
             (ACF) components, enabling greater adaptability for content creators."
             skills={["WordPress (ACF)", "HTML & CSS", "JavaScript", "PHP",]}
@@ -105,16 +100,18 @@ export default function Home() {
           <ProjectItem
             title="Christmanco Site Rebuild and Maintence"
             url="/christman"
-            description="Again work with team to rebuild and maintain, think of something unique i personally built to add in here."
-            skills={["WordPress", "HTML & CSS", "Monsido"]}
+            description="Worked with a with a team to rebuild and maintain ChristmanCo&apos;s website, enhancing its content management capabilities with a more flexible and dynamic 
+            platform. Utilized WordPress and Advanced Custom Fields (ACF) to develop a block-based design system, making it easier for content creators to manage and adapt site 
+            content efficiently."
+            skills={["WordPress (ACF)", "HTML & CSS", "JavaScript", "PHP",]}
           />
 
           <ProjectItem
             title="Version Tracker Microservice"
             url="/microservice"
-            description="Built a serverless microservice to track software dependencies across Curinos' nine products. Developed the backend in Java,
-            using AWS Lambda and API Gateway for real-time updates. Intergrated with Conflucne to automate dependency version tracking, reducing manual effort.
-            Write more/ add link to video and documentation??"
+            description="Designed and built a serverless microservice to track software dependencies across Curinos&apos; nine products. Developed the backend in Java,
+             leveraging AWS Lambda and API Gateway for real-time updates. Integrated with Confluence to automate version tracking, reducing manual effort. 
+             Developers use the service to query and update dependency versions seamlessly, ensuring accurate and up-to-date information across projects."
             skills={["Java", "AWS Lambda", "API Gateway"]}
           />
 
@@ -122,17 +119,17 @@ export default function Home() {
             title="Memory Hole"
             url="https://github.com/magoozz/Memory-Hole/tree/main"
             description="Implements a memory allocator based on the budy system designed to replace
-            'malloc'. It is able to do this through the use of freeList, bitMap and other utils (found in util.c) that help to calcualte the buddies address."
+            &apos;malloc&apos;. It is able to do this through the use of freeList, bitMap and other utils (found in util.c) that help to calcualte the buddies address."
             skills={["C"]}
           />
 
           <ProjectItem
             title="Converting a Regular Expression to an NFA"
             url="https://github.com/magoozz/RE-to-NFA"
-            description="By taking in a string of symbols (a, b, *, (, ), |) that represents a regular expression, we are able to give input strings and see whether or not they are 
-            contained within the language of the regular expression. It does this by converting the regular expression into a Nondeterministic Finite Automata, then using the 
+            description="By taking in a string of symbols (a, b, *, (, ), |) that represents a regular expression, input strings can be supplied to see whether or not they are 
+            contained within the language of the regular expression. Doing so by converting the regular expression into a Nondeterministic Finite Automata, then using the 
             functionality of that class, checking to see if the strings are accepted or not."
-            skills={["Java",] }
+            skills={["Java",]}
           />
         </div>
       </section>

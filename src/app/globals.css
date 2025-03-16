@@ -8,8 +8,11 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   display: flex;
-  background-color: #1b263b;
+  background-color: #21272e;
 }
+
+
+/* NAV */
 
 nav {
   position: fixed;
@@ -17,7 +20,6 @@ nav {
   top: 0;
   height: 100vh;
   width: 50rem;
-  background: #1b263b;
   padding: 20px 20px 20px 150px;
   display: flex;
   flex-direction: column;
@@ -37,6 +39,11 @@ nav {
         color: #e0e1dd;
       }
 
+      a:hover {
+        text-shadow: 0 0 1px #5eb591, 0 0 1px #5eb591, 0 0 50px #5eb591;
+        animation: glow 1.5s infinite alternate;
+      }
+
     }
 
     .title {
@@ -52,17 +59,26 @@ nav {
   }
 
   .tabs ul li a {
+    position: relative;
     text-decoration: none;
-    color: #888;
-    transition: color 0.3s ease;
+    color: white;
+    transition: all 0.3s ease-in-out;
     font-size: 2rem;
+    letter-spacing: 2px;
   }
-  
+
   .tabs ul li a.active {
-    color: #0070f3;
-    font-weight: bold;
+    color: #5eb591;
+    text-shadow: 0 0 1px #5eb591, 0 0 1px #5eb591, 0 0 50px #5eb591;
+    animation: glow 1.5s infinite alternate;
   }
-  
+
+
+  .tabs ul li a:hover {
+    color: #5eb591;
+    text-shadow: 0 0 1px #5eb591, 0 0 1px #5eb591, 0 0 50px #5eb591;
+    animation: glow 1.5s infinite alternate;
+  }
 
   .resume {
     display: flex;
@@ -81,26 +97,25 @@ nav {
       padding: 12px 24px;
       font-size: 1.125rem;
       font-weight: 600;
-      color: #1b263b;
-      background-color: #6993e5;
+      color: #21272e;
+      background-color: #5eb591;
       border-radius: 8px;
       text-decoration: none;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+      transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     }
-
+  
     .resume-button:hover,
     .resume-button:focus {
-      background-color: #5578ba;
+      background-color: #84d8b5;
       transform: scale(1.05);
-      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-    }
-
-    .resume-button:focus {
-      outline: none;
-      box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.5);
+      box-shadow:  
+        inset 0 0 8px #5eb591,
+        0 0 10px rgba(0, 255, 204, 0.5),
+        0 0 15px rgba(0, 255, 204, 0.4);
     }
   }
+
 
   .bottom {
     .social-icons {
@@ -113,6 +128,10 @@ nav {
       transform: translate(50%);
       width: 100%;
       margin-bottom: 7rem;
+
+      .link-text {
+        display: none;
+      }
     }
 
     .social-icons a {
@@ -121,40 +140,31 @@ nav {
     }
 
     .social-icons a:hover {
-      color: #6993e5;
+      color: #5eb591;
     }
   }
 
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
 
 nav li {
   margin-bottom: 10px;
 }
 
 nav a {
-  color: #6993e5;
+  color: #5eb591;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
-nav a:hover {
-  color: #5578ba;
-}
-
-nav a:active {
-  color: #b3b8c0;
-}
-
 main {
   flex-grow: 1;
 }
+
+
+
+/* PAGE */
 
 .home {
   padding: 3rem 60px 0px 200px;
@@ -178,7 +188,7 @@ main {
 
     a:hover {
       text-decoration: underline;
-      color: #6993e5;
+      color: #5eb591;
       text-decoration: none;
     }
   }
@@ -211,8 +221,13 @@ main {
 
   .experience-item:hover .description h3,
   .project-item:hover .description h3 {
-    color: #6993e5;
+    color: #5eb591;
     transition: color 0.3s;
+  }
+
+  .experience-item:hover .timeline,
+  .project-item:hover .timeline {
+    color: #a0a0a0;
   }
 
   .experience:hover .experience-item:not(:hover),
@@ -224,9 +239,10 @@ main {
 
   .timeline {
     min-width: 120px;
-    color: #a0a0a0;
+    color: #5eb591;
     font-size: 14px;
     text-transform: uppercase;
+    font-weight: bold;
   }
 
   .description {
@@ -248,13 +264,12 @@ main {
 
   .stack span {
     display: inline-block;
-    background: rgba(255, 255, 255, 0.1);
     padding: 5px 10px;
     border-radius: 5px;
     margin-right: 5px;
     font-size: 12px;
-    color: #6993e5;
-    background-color: #6992e519;
+    color: #5eb591;
+    background-color: #6df2bb1f;
   }
 }
 
@@ -276,7 +291,7 @@ section:last-of-type {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-    color: #6993e5;
+    color: #5eb591;
     font-weight: bold;
     font-size: 1.25rem;
     transition: transform 0.3s ease;
@@ -286,7 +301,7 @@ section:last-of-type {
       content: '←';
       position: absolute;
       left: -1.5rem;
-      color: #6993e5;
+      color: #5eb591;
       transition: transform 0.3s ease;
     }
 
@@ -367,7 +382,7 @@ section:last-of-type {
       font-size: 1.125rem;
       font-weight: 600;
       color: #1b263b;
-      background-color: #6993e5;
+      background-color: #5eb591;
       border-radius: 8px;
       text-decoration: none;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -376,9 +391,12 @@ section:last-of-type {
 
     .code-button:hover,
     .code-button:focus {
-      background-color: #5578ba;
+      background-color: #84d8b5;
       transform: scale(1.05);
-      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+      box-shadow:  
+        inset 0 0 8px #5eb591,
+        0 0 10px rgba(0, 255, 204, 0.5),
+        0 0 15px rgba(0, 255, 204, 0.4);
     }
 
     .code-button:focus {
@@ -387,6 +405,11 @@ section:last-of-type {
     }
   }
 }
+
+
+
+
+/* MOBILE */
 
 @media (max-width: 1200px) {
 
@@ -425,6 +448,7 @@ section:last-of-type {
         bottom: -2rem;
         left: -16%;
       }
+
       .social-icons {
         bottom: -12rem;
         left: -77%;
@@ -493,7 +517,7 @@ section:last-of-type {
           font-size: 1.125rem;
           font-weight: 600;
           color: #1b263b;
-          background-color: #6993e5;
+          background-color: #5eb591;
           border-radius: 8px;
           text-decoration: none;
           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -506,11 +530,6 @@ section:last-of-type {
           transform: scale(1.05);
           box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
         }
-
-        .code-button:focus {
-          outline: none;
-          box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.5);
-        }
       }
     }
 
@@ -520,11 +539,12 @@ section:last-of-type {
   }
 }
 
+/*
 .cursor-glow {
   position: fixed;
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle, rgb(3, 9, 20), transparent);
+  background: radial-gradient(circle, rgb(2, 11, 29), transparent);
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
@@ -532,3 +552,4 @@ section:last-of-type {
   mix-blend-mode: screen;
   z-index: 1000;
 }
+*/

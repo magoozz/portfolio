@@ -81,24 +81,31 @@ export default function Navigation() {
             href="https://www.linkedin.com/in/megan-bartlett-77215a215"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Linkedin"
           >
+            <span className="link-text">Linkedin</span>
             <FaLinkedin size={30} />
           </Link>
           <Link href="mailto:meganbartlett73@u.boisestate.edu">
+            <span className="link-text">Email</span>
             <FaEnvelope size={30} />
           </Link>
           <Link
             href="https://github.com/magoozz"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Github"
           >
+            <span className="link-text">Github</span>
             <FaGithub size={30} />
           </Link>
           <Link
             href="https://www.goodreads.com/user/show/164080752-megan-bartlett"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Good Reads"
           >
+            <span className="link-text">Good Reads</span>
             <FaBook size={30} />
           </Link>
         </div>
