@@ -6,7 +6,7 @@ export default function MicroservicePage() {
   return (
     <div className="microservice">
       <div className="header">
-        <a href="/#about" className="name-link">Megan Bartlett</a>
+        <Link href="/#about" className="name-link">Megan Bartlett</Link>
         <div className="header-wrap">
           <h1>Version Tracker Micro-service</h1>
           <div className="code-d">

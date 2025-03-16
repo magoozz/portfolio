@@ -6,7 +6,7 @@ export default function BlackbaudPage() {
   return (
     <div className="blackbaud">
       <div className="header">
-        <a href="/#about" className="name-link">Megan Bartlett</a>
+        <Link href="/#about" className="name-link">Megan Bartlett</Link>
         <div className="header-wrap">
           <h1>Blackbaud&apos;s Corporate Website</h1>
           <div className="code-d">
@@ -25,14 +25,14 @@ export default function BlackbaudPage() {
 
       <div className="content">
         <div className="code-m">
-          <a
+          <Link
             href="https://github.com/magoozz/version-tracker"
             className="code-button"
             target="_blank"
             rel="noopener noreferrer"
           >
             My code
-          </a>
+          </Link>
         </div>
         <h3>Project Overview</h3>
         <p>

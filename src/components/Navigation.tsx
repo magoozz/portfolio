@@ -39,40 +39,40 @@ export default function Navigation() {
       </div>
       <div className="bottom">
         <div className="resume">
-          <a
+          <Link
             href="/resume/MeganBartlett_Resume.pdf"
             download="MeganBartlett_Resume.pdf"
             className="resume-button"
           >
             My Resume
-          </a>
+          </Link>
         </div>
 
         <div className="social-icons">
-          <a
+          <Link
             href="https://www.linkedin.com/in/megan-bartlett-77215a215"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaLinkedin size={30} />
-          </a>
-          <a href="mailto:meganbartlett73@u.boisestate.edu">
+          </Link>
+          <Link href="mailto:meganbartlett73@u.boisestate.edu">
             <FaEnvelope size={30} />
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://github.com/magoozz"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaGithub size={30} />
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://www.goodreads.com/user/show/164080752-megan-bartlett"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaBook size={30} />
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
