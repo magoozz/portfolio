@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 export default function ChristmanPage() {
   ;
 
@@ -10,14 +10,14 @@ export default function ChristmanPage() {
         <div className="header-wrap">
           <h1>Christman Co&apos;s Corporate Website</h1>
           <div className="code-d">
-            <a
+            <Link
               href="https://www.Christmanco.com"
               className="code-button"
               target="_blank"
               rel="noopener noreferrer"
             >
               Christmanco.com
-            </a>
+            </Link>
           </div>
         </div>
         <h2>Developed and maintained as Web Software Developer at Elexicon</h2>

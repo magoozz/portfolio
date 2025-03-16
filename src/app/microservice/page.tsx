@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 export default function MicroservicePage() {
   ;
 
@@ -10,14 +10,14 @@ export default function MicroservicePage() {
         <div className="header-wrap">
           <h1>Version Tracker Micro-service</h1>
           <div className="code-d">
-            <a
+            <Link
               href="https://github.com/magoozz/version-tracker"
               className="code-button"
               target="_blank"
               rel="noopener noreferrer"
             >
               My code
-            </a>
+            </Link>
           </div>
         </div>
         <h2>Developed as Software Engineering Intern at Curinos</h2>
@@ -25,14 +25,14 @@ export default function MicroservicePage() {
 
       <div className="content">
         <div className="code-m">
-          <a
+          <Link
             href="https://github.com/magoozz/version-tracker"
             className="code-button"
             target="_blank"
             rel="noopener noreferrer"
           >
             My code
-          </a>
+          </Link>
         </div>
         <h3>Project Overview</h3>
         <p>

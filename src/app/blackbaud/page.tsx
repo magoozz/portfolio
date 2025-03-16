@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 export default function BlackbaudPage() {
   ;
 
@@ -10,14 +10,14 @@ export default function BlackbaudPage() {
         <div className="header-wrap">
           <h1>Blackbaud&apos;s Corporate Website</h1>
           <div className="code-d">
-            <a
+            <Link
               href="https://www.blackbaud.com"
               className="code-button"
               target="_blank"
               rel="noopener noreferrer"
             >
               Blackbaud.com
-            </a>
+            </Link>
           </div>
         </div>
         <h2>Developed and maintained as Web Software Developer at Elexicon</h2>
