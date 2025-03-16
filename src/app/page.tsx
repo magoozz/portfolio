@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="home">
       {/* About Section */}
-      <section id="about">
+      <section id="about" data-title="About">
         <div className="about">
           <div className="about-content">
             <p>
@@ -38,7 +38,7 @@ export default function Home() {
       </section>
 
       {/* Experience Section */}
-      <section id="experience">
+      <section id="experience" data-title="Experience">
         <div className="experience">
           <ExperienceItem
             dateRange="2023 — Present"
@@ -86,7 +86,7 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects">
+      <section id="projects" data-title="Projects">
         <div className="projects">
           <ProjectItem
             title="Blackbaud Site Rebuild and Maintnence"
@@ -135,8 +135,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact">
-        <h2>Contact</h2>
+      <section id="contact" data-title="Contact">
         <p>Ways to get in touch with me...</p>
       </section>
     </div>
