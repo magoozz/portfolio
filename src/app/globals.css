@@ -431,7 +431,7 @@ section:last-of-type {
     }
 
     .header {
-      padding-bottom: 2rem;
+      padding-bottom: 3rem;
 
       .name {
         font-size: 2.5rem;
@@ -445,7 +445,7 @@ section:last-of-type {
     .bottom {
 
       .resume {
-        bottom: -2rem;
+        bottom: -1rem;
         left: -16%;
       }
 
