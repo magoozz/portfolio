@@ -51,6 +51,19 @@ nav {
     }
   }
 
+  .tabs ul li a {
+    text-decoration: none;
+    color: #888;
+    transition: color 0.3s ease;
+    font-size: 2rem;
+  }
+  
+  .tabs ul li a.active {
+    color: #0070f3;
+    font-weight: bold;
+  }
+  
+
   .resume {
     display: flex;
     justify-content: center;

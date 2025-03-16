@@ -3,16 +3,38 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { FaLinkedin, FaGithub, FaBook, FaEnvelope } from "react-icons/fa";
+import { useEffect, useState } from "react";
 
 export default function Navigation() {
   const pathname = usePathname();
+  const [activeSection, setActiveSection] = useState<string>("");
+
+  useEffect(() => {
+    // Reset the active section when the component mounts
+    setActiveSection("");
+
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, [pathname]); // Reset observer when pathname changes
+
   const isMicroservice = pathname.startsWith("/microservice");
   const isBlackbaud = pathname.startsWith("/blackbaud");
   const isChristman = pathname.startsWith("/christman");
 
-  if (isMicroservice) return null;
-  if (isBlackbaud) return null;
-  if (isChristman) return null;
+  if (isMicroservice || isBlackbaud || isChristman) return null;
 
   return (
     <nav>
@@ -31,10 +53,16 @@ export default function Navigation() {
       </div>
       <div className="tabs">
         <ul>
-          <li><Link href="#about">About Me</Link></li>
-          <li><Link href="#experience">Experience</Link></li>
-          <li><Link href="#projects">Projects</Link></li>
-          <li><Link href="#contact">Contact</Link></li>
+          {["about", "experience", "projects", "contact"].map((section) => (
+            <li key={section}>
+              <Link
+                href={`#${section}`}
+                className={activeSection === section ? "active" : ""}
+              >
+                {section.charAt(0).toUpperCase() + section.slice(1)}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
       <div className="bottom">
