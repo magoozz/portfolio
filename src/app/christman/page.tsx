@@ -26,7 +26,7 @@ export default function ChristmanPage() {
       </div>
 
       <div className="block-content">
-        <h3>Examples of Specific Blocks I&apos;ve Built</h3>
+        <h3>Examples of Specific Blocks I&apos;ve Built:</h3>
 
         <div className="code-m">
           <Link
@@ -41,9 +41,9 @@ export default function ChristmanPage() {
           </Link>
         </div>
 
-        <div className="row">
-          <div className="col-md-6 mb-4">
-            <div className="block-item">
+        <div className="row d-flex align-items-stretch">
+          <div className="col-12 col-md-6 mb-4">
+            <div className="block-item h-110">
               <Link
                 href="https://www.christmanco.com/portfolio"
                 onClick={(e) => {
@@ -66,8 +66,8 @@ export default function ChristmanPage() {
             </div>
           </div>
 
-          <div className="col-md-6 mb-4">
-            <div className="block-item">
+          <div className="col-12 col-md-6 mb-4">
+            <div className="block-item h-110">
               <Link
                 href="https://www.christmanco.com/company/leadership"
                 onClick={(e) => {
@@ -90,8 +90,8 @@ export default function ChristmanPage() {
             </div>
           </div>
 
-          <div className="col-md-6 mb-4">
-            <div className="block-item">
+          <div className="col-12 col-md-6 mb-4">
+            <div className="block-item h-130">
               <Link
                 href="https://www.christmanco.com/markets/higher-education#:~:text=Portfolio-,Our%20blog,-How%20geothermal%20energy"
                 onClick={(e) => {
@@ -100,13 +100,18 @@ export default function ChristmanPage() {
                 }}
               >
                 <h4>Spotlight Cards ↗</h4>
-                <p>This block will be left-aligned if it&apos;s alone.</p>
+                <p>This component is designed to showcase key content in an engaging, dynamic carousel. It adapts based on the number of cards available, offering a responsive, visually appealing layout. When configured with 1x2 or 1x3 card layouts, the component automatically switches to a carousel display when there are more than two or three cards, respectively, ensuring a seamless user experience across devices.</p>
+                <h5>Key Features:</h5>
+                <ul className="ps-3" style={{ listStyleType: "disc", lineHeight: "1.8" }}>
+                  <li><strong>Card Size Options</strong> - Users can choose between 1x2 or 1x3 card configurations to fit their content needs.</li>
+                  <li><strong>Content Flexibility</strong> - Each card can contain an image, customizable copy (via a WYSIWYG editor), and an optional CTA link. If no CTA is provided, the card will display without a button.</li>
+                </ul>
               </Link>
             </div>
           </div>
 
-          <div className="col-md-6 mb-4">
-            <div className="block-item">
+          <div className="col-12 col-md-6 mb-4">
+            <div className="block-item h-130">
               <Link
                 href="https://www.christmanco.com/company/by-the-numbers"
                 onClick={(e) => {

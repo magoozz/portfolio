@@ -343,7 +343,7 @@ section:last-of-type {
     h3 {
       font-size: 1.2rem;
       font-weight: bold;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
 
     h4 {
@@ -585,6 +585,11 @@ section:last-of-type {
       margin-bottom: 2rem;
     }
   }
+
+  .block-item {
+    height: auto !important;
+    min-height: unset !important;
+}
 }
 
 
@@ -592,7 +597,7 @@ section:last-of-type {
   position: fixed;
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle, rgba(34, 35, 37, 0.053), transparent);
+  background: radial-gradient(circle, rgba(27, 27, 27, 0.053), transparent);
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);

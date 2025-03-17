@@ -19,7 +19,7 @@ export default function Home() {
 
             <p className="mt-6">
               At <Link href="https://elexicon.com/">Elexicon</Link>, I develop custom WordPress themes and full-stack applications for
-              enterprise clients like <Link href="https://www.blackbaud.com/">Blackbaud.com</Link> and <Link href="https://www.christmanco.com/">Christmanco.com</Link>.
+              enterprise clients like <Link href="https://www.blackbaud.com/">Blackbaud</Link> and <Link href="https://www.christmanco.com/">Christman Co</Link>.
               As part of an agile team, I help implement a design system and build flexible, ACF-based components.
             </p>
 
