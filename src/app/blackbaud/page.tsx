@@ -1,49 +1,211 @@
 "use client";
 import Link from "next/link";
-export default function BlackbaudPage() {
-  ;
+import 'bootstrap/dist/css/bootstrap-grid.min.css';
 
+export default function BlackbaudPage() {
   return (
     <div className="blackbaud">
       <div className="header">
         <Link href="/#about" className="name-link">Megan Bartlett</Link>
         <div className="header-wrap">
-          <h1>Blackbaud&apos;s Corporate Website</h1>
-          <div className="code-d">
-            <Link
-              href="https://www.blackbaud.com"
-              className="code-button"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Blackbaud.com
-            </Link>
+          <h1>Blackbaud&apos;s Corporate Websites</h1>
+          <div className="buttons">
+            <div className="code-d">
+              <Link
+                href="https://www.blackbaud.com"
+                className="code-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Blackbaud.com
+              </Link>
+            </div>
+            <div className="code-d">
+              <Link
+                href="https://www.yourcause.com/?utm_medium=paid+search&utm_source=google&utm_campaign=YRC-BRAND-2C-NPP-25-US&utm_term=yourcause&gad_source=1&gclid=Cj0KCQjw7dm-BhCoARIsALFk4v-J8M6lIpa-q8n8ACW_Ut0QXmiyrJxK3x_AQHOilPeLNbEOVLddAJoaAhXZEALw_wcB"
+                className="code-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Yourcause.com
+              </Link>
+            </div>
           </div>
         </div>
         <h2>Developed and maintained as Web Software Developer at Elexicon</h2>
       </div>
 
-      <div className="content">
+      <div className="block-content">
+        <h3>Examples of Specific Blocks I&apos;ve Built</h3>
+        <h3>Blackbaud.com:</h3>
+
         <div className="code-m">
           <Link
-            href="https://github.com/magoozz/version-tracker"
+            href="https://www.blackbaud.com"
             className="code-button"
             target="_blank"
             rel="noopener noreferrer"
           >
-            My code
+            Blackbaud.com
           </Link>
         </div>
-        <h3>Project Overview</h3>
-        <p>
-          The Version Tracker Blackbaud was a critical backend solution designed to enhance dependency management across multiple Curinos products. By integrating AWS Lambda and API Gateway, the Blackbaud automated version tracking, reducing manual efforts and ensuring real-time accuracy in dependency information.
+        <div className="code-m">
+          <Link
+            href="https://www.yourcause.com/?utm_medium=paid+search&utm_source=google&utm_campaign=YRC-BRAND-2C-NPP-25-US&utm_term=yourcause&gad_source=1&gclid=Cj0KCQjw7dm-BhCoARIsALFk4v-J8M6lIpa-q8n8ACW_Ut0QXmiyrJxK3x_AQHOilPeLNbEOVLddAJoaAhXZEALw_wcB"
+            className="code-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Yourcause.com
+          </Link>
+        </div>
 
-          Reflecting on this project, I see its impact beyond just the technical implementation. It was designed to simplify debugging for developers, providing an easily accessible, automated way to monitor dependencies. The integration with Confluence ensured that the dependency table remained up-to-date, allowing engineers across teams to identify outdated versions and potential conflicts efficiently.
+        <div className="row">
+          <div className="col-md-6 mb-4">
+            <div className="block-item">
+              <Link href="">
+                <h4>Portfolio Filter ↗</h4>
+                <p>test</p>
+              </Link>
+            </div>
+          </div>
 
-          Moreover, this project strengthened my ability to analyze large-scale system dependencies, handle data extraction and transformation, and deploy serverless cloud-based solutions. It reinforced the importance of automation and real-time data management in a Blackbauds ecosystem.
-        </p>
+          <div className="col-md-6 mb-4">
+            <div className="block-item">
+              <Link href="https://www.christmanco.com/company/leadership">
+                <h4>Leadership Filtering System ↗</h4>
+                <p>
+
+                </p>
+              </Link>
+            </div>
+          </div>
+
+          <div className="col-md-6 mb-4">
+            <div className="block-item">
+              <Link href="https://example.com">
+                <h4>Another Block ↗</h4>
+                <p>This block will be left-aligned if it's alone.</p>
+              </Link>
+            </div>
+          </div>
+
+        </div>
       </div>
 
+      <div className="block-content">
+        <h3>Yourcause.com:</h3>
+
+        <div className="code-m">
+          <Link
+            href="https://www.blackbaud.com"
+            className="code-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Blackbaud.com
+          </Link>
+        </div>
+        <div className="code-m">
+          <Link
+            href="https://www.yourcause.com/?utm_medium=paid+search&utm_source=google&utm_campaign=YRC-BRAND-2C-NPP-25-US&utm_term=yourcause&gad_source=1&gclid=Cj0KCQjw7dm-BhCoARIsALFk4v-J8M6lIpa-q8n8ACW_Ut0QXmiyrJxK3x_AQHOilPeLNbEOVLddAJoaAhXZEALw_wcB"
+            className="code-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Yourcause.com
+          </Link>
+        </div>
+
+        <div className="row">
+          <div className="col-md-6 mb-4">
+            <div className="block-item">
+              <Link href="">
+                <h4>Portfolio Filter ↗</h4>
+                <p>test</p>
+              </Link>
+            </div>
+          </div>
+
+          <div className="col-md-6 mb-4">
+            <div className="block-item">
+              <Link href="https://www.christmanco.com/company/leadership">
+                <h4>Leadership Filtering System ↗</h4>
+                <p>
+
+                </p>
+              </Link>
+            </div>
+          </div>
+
+          <div className="col-md-6 mb-4">
+            <div className="block-item">
+              <Link href="https://example.com">
+                <h4>Another Block ↗</h4>
+                <p>This block will be left-aligned if it's alone.</p>
+              </Link>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div className="block-content">
+        <h3>Everfi.com (Un-relased):</h3>
+
+        <div className="code-m">
+          <Link
+            href="https://www.blackbaud.com"
+            className="code-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Blackbaud.com
+          </Link>
+        </div>
+        <div className="code-m">
+          <Link
+            href="https://www.yourcause.com/?utm_medium=paid+search&utm_source=google&utm_campaign=YRC-BRAND-2C-NPP-25-US&utm_term=yourcause&gad_source=1&gclid=Cj0KCQjw7dm-BhCoARIsALFk4v-J8M6lIpa-q8n8ACW_Ut0QXmiyrJxK3x_AQHOilPeLNbEOVLddAJoaAhXZEALw_wcB"
+            className="code-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Yourcause.com
+          </Link>
+        </div>
+
+        <div className="row">
+          <div className="col-md-6 mb-4">
+            <div className="block-item">
+              <Link href="">
+                <h4>Portfolio Filter ↗</h4>
+                <p>test</p>
+              </Link>
+            </div>
+          </div>
+
+          <div className="col-md-6 mb-4">
+            <div className="block-item">
+              <Link href="https://www.christmanco.com/company/leadership">
+                <h4>Leadership Filtering System ↗</h4>
+                <p>
+
+                </p>
+              </Link>
+            </div>
+          </div>
+
+          <div className="col-md-6 mb-4">
+            <div className="block-item">
+              <Link href="https://example.com">
+                <h4>Another Block ↗</h4>
+                <p>This block will be left-aligned if it's alone.</p>
+              </Link>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
   );
 }

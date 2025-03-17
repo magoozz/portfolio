@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ExperienceItem from "../components/ExperienceItem";
 import ProjectItem from "../components/ProjectItem";
+import 'bootstrap/dist/css/bootstrap-grid.min.css';
 
 export default function Home() {
   return (

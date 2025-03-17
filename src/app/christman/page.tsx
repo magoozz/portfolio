@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
-export default function ChristmanPage() {
-  ;
+import 'bootstrap/dist/css/bootstrap-grid.min.css';
 
+export default function ChristmanPage() {
   return (
     <div className="christman">
       <div className="header">
@@ -23,7 +23,9 @@ export default function ChristmanPage() {
         <h2>Developed and maintained as Web Software Developer at Elexicon</h2>
       </div>
 
-      <div className="content">
+      <div className="block-content">
+        <h3>Examples of Specific Blocks I&apos;ve Built</h3>
+
         <div className="code-m">
           <Link
             href="https://github.com/magoozz/version-tracker"
@@ -34,16 +36,72 @@ export default function ChristmanPage() {
             My code
           </Link>
         </div>
-        <h3>Project Overview</h3>
-        <p>
-          The Version Tracker Christman was a critical backend solution designed to enhance dependency management across multiple Curinos products. By integrating AWS Lambda and API Gateway, the Christman automated version tracking, reducing manual efforts and ensuring real-time accuracy in dependency information.
 
-          Reflecting on this project, I see its impact beyond just the technical implementation. It was designed to simplify debugging for developers, providing an easily accessible, automated way to monitor dependencies. The integration with Confluence ensured that the dependency table remained up-to-date, allowing engineers across teams to identify outdated versions and potential conflicts efficiently.
+        <div className="row">
+          <div className="col-md-6 mb-4">
+            <div className="block-item">
+              <Link href="https://www.christmanco.com/portfolio">
+                <h4>Portfolio Filter ↗</h4>
+                <p>
+                  Designed to enhance the usability of the Portfolio page, this filtering system provides an intuitive way for users to search and refine projects dynamically.
+                </p>
+                <h5>Key Features:</h5>
+                <ul className="ps-3" style={{ listStyleType: "disc", lineHeight: "1.8" }}>
+                  <li><strong>Portfolio Taxonomies</strong> - Allows users to filter projects based on predefined categories..</li>
+                  <li><strong>Page Tiles</strong> - Displays projects in an organized, visually appealing format.</li>
+                  <li><strong>Custom Post Type (CPT) Integration</strong> - "PROJECT" is mapped to the Portfolio CPT for structured content management.</li>
+                  <li><strong>Search Queries</strong> - Routed to the Search Results Template, ensuring a seamless and relevant browsing experience.</li>
+                </ul>
+              </Link>
+            </div>
+          </div>
 
-          Moreover, this project strengthened my ability to analyze large-scale system dependencies, handle data extraction and transformation, and deploy serverless cloud-based solutions. It reinforced the importance of automation and real-time data management in a Christmans ecosystem.
-        </p>
+          <div className="col-md-6 mb-4">
+            <div className="block-item">
+              <Link href="https://www.christmanco.com/company/leadership">
+                <h4>Leadership Filtering System ↗</h4>
+                <p>
+                  Designed to enhance the usability of the Leadership page. This system provides an intuitive way for users to search and filter leadership profiles dynamically.
+                </p>
+                <h5>Key Features:</h5>
+                <ul className="ps-3" style={{ listStyleType: "disc", lineHeight: "1.8" }}>
+                  <li><strong>Leadership Taxonomy</strong> - Allows users to filter leadership profiles based on predefined categories.</li>
+                  <li><strong>Locations Taxonomy</strong> - Enables filtering by geographical location.</li>
+                  <li><strong>Leadership Grid Component</strong> - Displays filtered results in an organized, visually appealing layout.</li>
+                  <li><strong>Search Queries</strong> - Directed to the Search Results Template, ensuring a seamless user experience with a focus on the Leadership Custom Post Type.</li>
+                </ul>
+              </Link>
+            </div>
+          </div>
+
+          <div className="col-md-6 mb-4">
+            <div className="block-item">
+              <Link href="https://example.com">
+                <h4>Spotlight Cards ↗</h4>
+                <p>This block will be left-aligned if it's alone.</p>
+              </Link>
+            </div>
+          </div>
+
+
+          <div className="col-md-6 mb-4">
+            <div className="block-item">
+              <Link href="https://www.christmanco.com/company/by-the-numbers">
+                <h4>By The Numbers ↗</h4>
+                <p>A dynamic, structured block system that presents key company metrics with clarity and visual appeal:</p>
+                <ul className="ps-3" style={{ listStyleType: "disc", lineHeight: "1.8" }}>
+                  <li><strong>Full-Width Blocks (Blue, White)</strong> - Designed for high-impact statistics, featuring a Number (Text Field) and Context (WYSIWYG). The white block includes a two-column list format for detailed breakdowns.</li>
+                  <li><strong>3-Block Layouts (Green, White, Orange)</strong> - ach section showcases a Number (Text Field) and Context (WYSIWYG), with select blocks incorporating an Icon (Image Field) for visual reinforcement.</li>
+                  <li><strong>2-Block Layouts (Bronze, Grey, Green, Blue, Orange)</strong> - Optimized for comparative stats, combining Number (Text Field), Context (WYSIWYG), and Icon (Image Field) where applicable.</li>
+                </ul>
+                <p>
+                  This modular design ensures flexibility while maintaining a cohesive, structured narrative for company insights.
+                </p>
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
-
     </div>
   );
 }
