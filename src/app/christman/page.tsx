@@ -100,7 +100,7 @@ export default function ChristmanPage() {
                 }}
               >
                 <h4>Spotlight Cards ↗</h4>
-                <p>This block will be left-aligned if it's alone.</p>
+                <p>This block will be left-aligned if it&apos;s alone.</p>
               </Link>
             </div>
           </div>
