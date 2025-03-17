@@ -59,7 +59,7 @@ export default function ChristmanPage() {
                 <ul className="ps-3" style={{ listStyleType: "disc", lineHeight: "1.8" }}>
                   <li><strong>Portfolio Taxonomies</strong> - Allows users to filter projects based on predefined categories.</li>
                   <li><strong>Page Tiles</strong> - Displays projects in an organized, visually appealing format.</li>
-                  <li><strong>Custom Post Type (CPT) Integration</strong> - "PROJECT" is mapped to the Portfolio CPT for structured content management.</li>
+                  <li><strong>Custom Post Type (CPT) Integration</strong> - &quot;PROJECT&quot; is mapped to the Portfolio CPT for structured content management.</li>
                   <li><strong>Search Queries</strong> - Routed to the Search Results Template, ensuring a seamless and relevant browsing experience.</li>
                 </ul>
               </Link>
