@@ -53,7 +53,7 @@ export default function Navigation() {
       </div>
       <div className="tabs">
         <ul>
-          {["about", "experience", "projects", "contact"].map((section) => (
+          {["about", "experience", "projects"].map((section) => (
             <li key={section}>
               <Link
                 href={`#${section}`}

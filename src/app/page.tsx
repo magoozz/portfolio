@@ -134,11 +134,6 @@ export default function Home() {
           />
         </div>
       </section>
-
-      {/* Contact Section */}
-      <section id="contact" data-title="Contact">
-        <p>Ways to get in touch with me...</p>
-      </section>
     </div>
   );
 }
