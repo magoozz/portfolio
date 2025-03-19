@@ -1,7 +1,8 @@
 "use client";
 import Link from "next/link";
+import 'bootstrap/dist/css/bootstrap-grid.min.css';
+
 export default function MicroservicePage() {
-  ;
 
   return (
     <div className="microservice">
@@ -23,7 +24,7 @@ export default function MicroservicePage() {
         <h2>Developed as Software Engineering Intern at Curinos</h2>
       </div>
 
-      <div className="content">
+      <div className="content col-md-12">
         <div className="code-m">
           <Link
             href="https://github.com/magoozz/version-tracker"

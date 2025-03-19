@@ -344,7 +344,7 @@ section:last-of-type {
     }
   }
 
-  .block-content {
+  .block-content, .content {
     max-width: 93%;
 
     h3 {
