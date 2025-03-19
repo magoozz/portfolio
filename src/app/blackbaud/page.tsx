@@ -37,7 +37,6 @@ export default function BlackbaudPage() {
 
       <div className="block-content">
         <h3>Examples of Specific Blocks I&apos;ve Built</h3>
-        <h3>Blackbaud.com:</h3>
 
         <div className="code-m">
           <Link href="https://www.blackbaud.com" className="code-button" target="_blank" rel="noopener noreferrer">Blackbaud.com</Link>
@@ -64,15 +63,26 @@ export default function BlackbaudPage() {
               </Link>
             </div>
           </div>
-        </div>
 
-        <h3>Yourcause.com:</h3>
-        <div className="row">
           <div className="col-md-6 mb-4">
             <div className="block-item">
-              <Link href="" target="_blank" rel="noopener noreferrer">
-                <h4>Filler ↗</h4>
-                <p>test</p>
+              <Link href="https://www.yourcause.com/blog" target="_blank" rel="noopener noreferrer">
+                <h4>Search Results Template ↗</h4>
+                <p>Enhances the users experience by dynamically displaying relevant content across multiple sections of the website.
+                  This flexible template is designed to work with various content types (CPT), ensuring users quickly find the information
+                  they need.
+                </p>
+                <h5>Key Features:</h5>
+                <ul className="ps-3" style={{ listStyleType: "disc", lineHeight: "1.8" }}>
+                  <li><strong>Hero Textual Component</strong> - Displays a heading with the format "Search Results for [term]" to provide clear user feedback.</li>
+                  <li><strong>Card Grid Medium Layout</strong> - Organizes results in an easy-to-scan grid format for improved readability.</li>
+                  <li><strong>Content Pull Mechanism</strong> - Retrieves and displays relevant posts or pages dynamically. Including fetured image.</li>
+                  <li><strong>EF Author Taxonomy Selection (for Blog Posts)</strong> - Displays the author's taxonomy for additional context.</li>
+                  <li><strong>Post/Page Details</strong> - Includes the title, excerpt, and permalink, ensuring quick access to full content.</li>
+                </ul>
+                <p>This template improves search functionality by offering a structured, intuitive, and visually appealing results page while maintaining 
+                  flexibility across content types.
+                </p>
               </Link>
             </div>
           </div>
@@ -85,14 +95,10 @@ export default function BlackbaudPage() {
               </Link>
             </div>
           </div>
-        </div>
 
-        <h3>Yet to be released sites:</h3>
-        <div className="row">
           <div className="col-md-6 mb-4">
-            <div className="block-item">
-              <Link href="" target="_blank" rel="noopener noreferrer">
-                <h4>Tabs + Events Cards</h4>
+            <div className="block-item hover-effect">
+                <h4>Tabs + Events Cards · Yet to be deployed</h4>
                 <p>The Tabs + Events component provides an intuitive way to explore upcoming, past, and on-demand events through
                   a structured, tabbed interface. Designed to dynamically pull event content from the Events CPT, this system ensures
                   a seamless, filterable experience while maintaining content governance alignment with the Event Topics Taxonomy.
@@ -118,16 +124,28 @@ export default function BlackbaudPage() {
                 </ul>
                 <p>By integrating these features, the Tabs + Events system creates an organized, engaging way to navigate event content while allowing for deep linking and enhanced filtering.
                 </p>
-              </Link>
+
             </div>
           </div>
 
           <div className="col-md-6 mb-4">
-            <div className="block-item">
-              <Link href="https://www.christmanco.com/company/leadership" target="_blank" rel="noopener noreferrer">
-                <h4>Filler</h4>
-                <p></p>
-              </Link>
+            <div className="block-item hover-effect">
+                <h4>Sticky Sidebar Nav · Yet to be deployed</h4>
+                <p>The Sticky Nav Template enhances content navigation by providing a fixed sidebar menu that allows users to quickly jump to different sections of a page. Built with a structured 
+                  fieldset, this template ensures consistency while giving users control over content organization.
+                </p>
+                <h5>Key Features:</h5>
+                <ul className="ps-3" style={{ listStyleType: "disc", lineHeight: "1.8" }}>
+                  <li><strong>Hero Section</strong> - Uses the Hero - Textual fieldset to maintain visual consistency across pages.</li>
+                  <li><strong>Sticky Navigation</strong> - Configured through a Navigation repeater field. Users input a Link Label and a corresponding Link ID (with or without #).
+                  Ensures a structured and user-friendly sidebar experience.</li>
+                  <li><strong>Content Management</strong> - A WYSIWYG editor provides flexibility for adding formatted text, paragraphs, and rich content.
+                  Users assign id= attributes to headers, ensuring seamless anchor link functionality.</li>
+                  <li><strong>Anchor Link Scroll Offset</strong> - Provides smooth scrolling with an offset to prevent header overlap.</li>
+                </ul>
+                <p>This template streamlines navigation for long-form content while keeping the page structure intuitive and user-controlled.
+                </p>
+
             </div>
           </div>
         </div>
@@ -135,3 +153,5 @@ export default function BlackbaudPage() {
     </div>
   );
 }
+
+

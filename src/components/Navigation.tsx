@@ -81,12 +81,13 @@ export default function Navigation() {
             href="https://www.linkedin.com/in/megan-bartlett-77215a215"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Linkedin"
+            aria-label="Megan's Linkedin"
           >
             <span className="link-text">Linkedin</span>
             <FaLinkedin size={30} />
           </Link>
-          <Link href="mailto:meganbartlett73@u.boisestate.edu">
+          <Link href="mailto:meganbartlett73@u.boisestate.edu"
+            aria-label="Send an email to Megan Bartlett">
             <span className="link-text">Email</span>
             <FaEnvelope size={30} />
           </Link>
@@ -94,7 +95,7 @@ export default function Navigation() {
             href="https://github.com/magoozz"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Github"
+            aria-label="Megan's Github"
           >
             <span className="link-text">Github</span>
             <FaGithub size={30} />
@@ -103,7 +104,7 @@ export default function Navigation() {
             href="https://www.goodreads.com/user/show/164080752-megan-bartlett"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Good Reads"
+            aria-label="Megan's Good Reads"
           >
             <span className="link-text">Good Reads</span>
             <FaBook size={30} />

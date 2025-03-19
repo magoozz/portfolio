@@ -67,6 +67,7 @@ nav {
     transition: all 0.3s ease-in-out;
     font-size: 2rem;
     letter-spacing: 2px;
+    margin-bottom: 1rem;
   }
 
   .tabs ul li a.active {
@@ -86,7 +87,6 @@ nav {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
-    z-index: 1001;
     position: absolute;
     bottom: 11rem;
     left: 4.5rem;
@@ -123,7 +123,7 @@ nav {
     .social-icons {
       display: flex;
       justify-content: center;
-      gap: 15px;
+      gap: 1.25rem;
       position: absolute;
       bottom: 0;
       left: -35.75rem;
@@ -376,6 +376,12 @@ section:last-of-type {
       background-color: rgba(255, 255, 255, 0.045);
     }
 
+    .block-item,
+    .hover-effect {
+      flex-direction: column;
+      gap: 0;
+    }
+
     .block-item:hover {
       background-color: rgba(255, 255, 255, 0.045);
       box-shadow: 0 4px 6px rgba(255, 255, 255, 0);
@@ -385,6 +391,12 @@ section:last-of-type {
     .block-item:hover h4 {
       color: #5eb591;
       transition: color 0.3s;
+    }
+
+    .block-content:hover .block-item:not(:hover) {
+      opacity: 0.5;
+      filter: blur(2px);
+      transition: opacity 0.3s, filter 0.3s;
     }
 
     .row:hover .block-item:not(:hover) {
@@ -516,6 +528,26 @@ section:last-of-type {
     max-width: 27rem;
     margin-left: 0;
     margin-bottom: 4rem;
+
+    .sticky-header {
+      display: block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      transform: none !important;
+      text-align: left;
+      margin-left: 1.5rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #21272e;
+      color: #5eb591;
+      padding: 10px 20px;
+      font-size: 18px;
+      font-weight: bold;
+      z-index: 1005;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
   }
 
   main {
@@ -614,3 +646,8 @@ section:last-of-type {
   z-index: 1000;
 }
 */
+
+.sticky-header {
+
+  display: none;
+}
