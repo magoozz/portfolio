@@ -365,6 +365,10 @@ section:last-of-type {
       color: #b3b8c0;
     }
 
+    h6 {
+      margin-top: 1rem;
+    }
+
     .block-item {
       display: flex;
       align-items: flex-start;
