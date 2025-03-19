@@ -74,10 +74,10 @@ export default function BlackbaudPage() {
                 </p>
                 <h5>Key Features:</h5>
                 <ul className="ps-3" style={{ listStyleType: "disc", lineHeight: "1.8" }}>
-                  <li><strong>Hero Textual Component</strong> - Displays a heading with the format "Search Results for [term]" to provide clear user feedback.</li>
+                  <li><strong>Hero Textual Component</strong> - Displays a heading with the format &quot;Search Results for [term]&quot; to provide clear user feedback.</li>
                   <li><strong>Card Grid Medium Layout</strong> - Organizes results in an easy-to-scan grid format for improved readability.</li>
                   <li><strong>Content Pull Mechanism</strong> - Retrieves and displays relevant posts or pages dynamically. Including fetured image.</li>
-                  <li><strong>EF Author Taxonomy Selection (for Blog Posts)</strong> - Displays the author's taxonomy for additional context.</li>
+                  <li><strong>EF Author Taxonomy Selection (for Blog Posts)</strong> - Displays the author&apos;s taxonomy for additional context.</li>
                   <li><strong>Post/Page Details</strong> - Includes the title, excerpt, and permalink, ensuring quick access to full content.</li>
                 </ul>
                 <p>This template improves search functionality by offering a structured, intuitive, and visually appealing results page while maintaining 

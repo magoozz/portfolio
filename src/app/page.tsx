@@ -44,7 +44,7 @@ const StickyHeader = () => {
         <div className="about">
           <div className="about-content">
             <p>
-              I’m a Software Engineer passionate about building dynamic, scalable, and accessible web experiences.
+              I&apos;m a Software Engineer passionate about building dynamic, scalable, and accessible web experiences.
               Specializing in full-stack development, I create custom WordPress solutions, microservices, and intuitive
               front-end interfaces with React and JavaScript. My expertise includes PHP, Java, AWS serverless architectures,
               and web accessibility.
