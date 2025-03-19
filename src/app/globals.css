@@ -344,7 +344,7 @@ section:last-of-type {
     }
   }
 
-  .block-content, .content {
+  .block-content {
     max-width: 93%;
 
     h3 {
@@ -405,6 +405,24 @@ section:last-of-type {
 
     .block-item {
       transition: opacity 0.3s, filter 0.3s;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.045);
+    margin-bottom: 2rem;
+    max-width: 91%;
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
     }
   }
 
