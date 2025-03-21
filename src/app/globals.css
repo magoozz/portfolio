@@ -179,6 +179,14 @@ main {
   width: 57rem;
   margin-bottom: 7rem;
 
+  .sticky-header {
+    display: none;
+  }
+  
+  .mobile-title {
+    display: none;
+  }
+
   .about {
     margin-bottom: 2rem;
     padding: 2rem 1.25rem;
@@ -551,7 +559,6 @@ section:last-of-type {
       opacity: 1 !important;
       transform: none !important;
       text-align: left;
-      margin-left: 1.5rem;
       position: fixed;
       top: 0;
       left: 0;
@@ -563,6 +570,18 @@ section:last-of-type {
       font-weight: bold;
       z-index: 1005;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+      p {
+        margin-left: 1rem;
+      }
+    }
+
+    .mobile-title {
+      color: #5eb591;
+      display: block;
+      padding: 10px 20px;
+      font-size: 18px;
+      font-weight: bold;
     }
   }
 
@@ -662,8 +681,3 @@ section:last-of-type {
   z-index: 1000;
 }
 */
-
-.sticky-header {
-
-  display: none;
-}

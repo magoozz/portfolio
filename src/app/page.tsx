@@ -7,41 +7,45 @@ import 'bootstrap/dist/css/bootstrap-grid.min.css';
 import { useEffect, useState } from "react";
 
 const StickyHeader = () => {
-    const [currentSection, setCurrentSection] = useState("About");
+  const [currentSection, setCurrentSection] = useState("About");
 
-    useEffect(() => {
-      const sections = document.querySelectorAll("section");
-  
-      const updateHeader = () => {
-          let newSection = ""; // Keep empty until a section is reached
-  
-          sections.forEach((section) => {
-              const rect = section.getBoundingClientRect();
-              if (rect.top <= 100 && rect.bottom >= 100) {
-                  newSection = section.getAttribute("data-title") || section.id;
-              }
-          });
-  
-          setCurrentSection(newSection); // Updates only when a section is detected
-      };
-  
-      window.addEventListener("scroll", updateHeader);
-      updateHeader(); // Run on mount
-  
-      return () => {
-          window.removeEventListener("scroll", updateHeader);
-      };
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+
+    const updateHeader = () => {
+      let newSection = ""; // Keep empty until a section is reached
+
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 100 && rect.bottom >= 100) {
+          newSection = section.getAttribute("data-title") || section.id;
+        }
+      });
+
+      setCurrentSection(newSection); // Updates only when a section is detected
+    };
+
+    window.addEventListener("scroll", updateHeader);
+    updateHeader(); // Run on mount
+
+    return () => {
+      window.removeEventListener("scroll", updateHeader);
+    };
   }, []);
-  
-  
+
+
 
 
   return (
     <div className="home">
-      <div className="sticky-header">{currentSection}</div>
+      <div className="sticky-header">
+        <p>{currentSection}</p></div>
       {/* About Section */}
       <section id="about" data-title="About">
         <div className="about">
+          <div className="mobile-title">
+            About
+          </div>
           <div className="about-content">
             <p>
               I&apos;m a Software Engineer passionate about building dynamic, scalable, and accessible web experiences.
@@ -74,6 +78,9 @@ const StickyHeader = () => {
       {/* Experience Section */}
       <section id="experience" data-title="Experience">
         <div className="experience">
+        <div className="mobile-title">
+            Experience
+          </div>
           <ExperienceItem
             dateRange="2023 — Present"
             title="Web & Software Developer"
@@ -121,6 +128,9 @@ const StickyHeader = () => {
 
       {/* Projects Section */}
       <section id="projects" data-title="Projects">
+      <div className="mobile-title">
+            Projects
+          </div>
         <div className="projects">
           <ProjectItem
             title="Blackbaud Site Rebuild and Maintnence"

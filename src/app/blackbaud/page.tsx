@@ -50,7 +50,7 @@ export default function BlackbaudPage() {
             <div className="block-item h-160">
               <Link href="https://www.yourcause.com/blog" target="_blank" rel="noopener noreferrer">
                 <h4>Search Results Template ↗</h4>
-                <p>The Search Results Template rnhances the users experience by dynamically displaying relevant content across multiple sections of the website.
+                <p>The Search Results Template enhances the users experience by dynamically displaying relevant content across multiple sections of the website.
                   This flexible template is designed to work with various content types (CPT), ensuring users quickly find the information
                   they need.
                 </p>
