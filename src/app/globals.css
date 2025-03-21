@@ -170,18 +170,19 @@ main {
 /* PAGE */
 
 .home {
-  padding: 3rem 60px 0px 200px;
-  margin-left: 600px;
+  margin-left: 48%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #b3b8c0;
-  width: 57rem;
+  max-width: 45%;
   margin-bottom: 7rem;
+  margin-top: 3.1rem;
 
   .sticky-header {
     display: none;
   }
+
 
   .about {
     margin-bottom: 2rem;
@@ -562,7 +563,7 @@ section:last-of-type {
       background: #21272e;
       color: #5eb591;
       padding: 10px 20px;
-      font-size: 30px;
+      font-size: 18px;
       font-weight: bold;
       z-index: 1005;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
