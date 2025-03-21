@@ -71,6 +71,8 @@ export default function Navigation() {
             href="/resume/MeganBartlett_Resume.pdf"
             download="MeganBartlett_Resume.pdf"
             className="resume-button"
+            target="_blank" 
+            rel="noopener noreferrer"
           >
             My Resume
           </Link>
