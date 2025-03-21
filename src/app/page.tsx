@@ -37,7 +37,7 @@ const StickyHeader = () => {
 
 
   return (
-    <div className="home">
+    <div className="home col-md-12">
       <div className="sticky-header">
         <p>{currentSection}</p></div>
       {/* About Section */}
