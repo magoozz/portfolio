@@ -43,9 +43,6 @@ const StickyHeader = () => {
       {/* About Section */}
       <section id="about" data-title="About">
         <div className="about">
-          <div className="mobile-title">
-            About
-          </div>
           <div className="about-content">
             <p>
               I&apos;m a Software Engineer passionate about building dynamic, scalable, and accessible web experiences.
@@ -78,9 +75,6 @@ const StickyHeader = () => {
       {/* Experience Section */}
       <section id="experience" data-title="Experience">
         <div className="experience">
-        <div className="mobile-title">
-            Experience
-          </div>
           <ExperienceItem
             dateRange="2023 — Present"
             title="Web & Software Developer"
@@ -128,9 +122,6 @@ const StickyHeader = () => {
 
       {/* Projects Section */}
       <section id="projects" data-title="Projects">
-      <div className="mobile-title">
-            Projects
-          </div>
         <div className="projects">
           <ProjectItem
             title="Blackbaud Site Rebuild and Maintnence"
