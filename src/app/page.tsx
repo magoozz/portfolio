@@ -52,9 +52,9 @@ const StickyHeader = () => {
             </p>
 
             <p className="mt-6">
-              At <Link href="https://elexicon.com/">Elexicon</Link>, I develop custom WordPress themes and full-stack applications for
+              At <Link href="https://elexicon.com/">Elexicon</Link>, I developed custom WordPress themes and full-stack applications for
               enterprise clients like <Link href="https://www.blackbaud.com/">Blackbaud</Link> and <Link href="https://www.christmanco.com/">Christman Co</Link>.
-              As part of an agile team, I help implement a design system and build flexible, ACF-based components.
+              As part of an agile team, I helped implement a design system and build flexible, ACF-based components.
             </p>
 
             <p className="mt-6">
@@ -76,7 +76,7 @@ const StickyHeader = () => {
       <section id="experience" data-title="Experience">
         <div className="experience">
           <ExperienceItem
-            dateRange="2023 — Present"
+            dateRange="2023 — 2025"
             title="Web & Software Developer"
             company="Elexicon"
             companyUrl="https://elexicon.com/"
