@@ -126,7 +126,7 @@ const StickyHeader = () => {
           <ProjectItem
             title="Blackbaud Site Rebuild and Maintnence"
             url="/blackbaud"
-            description="Collaborated with team to rebuild and maintain Blackbaud&apos;s
+            description="Collaborated with my team to rebuild and maintain Blackbaud&apos;s
             corportate website, enhancing content management with a more dynamic, flexible platform. Utilized Wordpress to implement a design system based off the block-based 
             (ACF) components, enabling greater adaptability for content creators."
             skills={["WordPress (ACF)", "HTML & CSS", "JavaScript", "PHP",]}
@@ -135,7 +135,7 @@ const StickyHeader = () => {
           <ProjectItem
             title="Christmanco Site Rebuild and Maintence"
             url="/christman"
-            description="Worked with team to rebuild and maintain ChristmanCo&apos;s website, enhancing its content management capabilities with a more flexible and dynamic 
+            description="Worked with my team to rebuild and maintain ChristmanCo&apos;s website, enhancing its content management capabilities with a more flexible and dynamic 
             platform. Utilized WordPress and Advanced Custom Fields (ACF) to develop a block-based design system, making it easier for content creators to manage and adapt site 
             content efficiently."
             skills={["WordPress (ACF)", "HTML & CSS", "JavaScript", "PHP",]}
